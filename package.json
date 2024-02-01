@@ -1,0 +1,43 @@
+{
+  "name": "react_portfolio",
+  "version": "1.0.0",
+  "description": "a portfolio built using React",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "vite": "^4.4.5",
+    "@testing-library/react": "^14.0.0",
+    "happy-dom": "^9.10.7",
+    "vitest": "^0.30.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JustDesmarais/React_Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustDesmarais/React_Portfolio/issues"
+  },
+  "homepage": "https://github.com/JustDesmarais/React_Portfolio#readme"
+}
