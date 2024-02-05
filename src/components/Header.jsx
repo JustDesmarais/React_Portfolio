@@ -2,7 +2,7 @@ import NavTabs from '/src/components/NavTabs'
 
 function Header() {
     return (
-        <header>
+        <header class="bg-primary">
             <h1>Justin Desmarais</h1>
             <NavTabs />
         </header>
