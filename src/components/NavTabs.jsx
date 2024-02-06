@@ -4,7 +4,7 @@ function Nav() {
     const currentPage = useLocation().pathname;
   
     return (
-      <ul className="nav nav-tabs">
+      <ul className="nav nav-tabs col-5 align-self-end">
         <li className="nav-item">
           <Link
             to="/"
@@ -18,7 +18,7 @@ function Nav() {
             to="/Portfolio"
             className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
           >
-            Blog
+            Portfolio
           </Link>
         </li>
         <li className="nav-item">

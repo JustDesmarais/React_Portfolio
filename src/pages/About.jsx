@@ -1,6 +1,6 @@
 function About() {
     return (
-      <div>
+      <div class="container">
         <h1>About Me</h1>
         <img src="" alt="author image" />
         <p>

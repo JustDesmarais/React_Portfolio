@@ -1,6 +1,6 @@
 export default function Portfolio () {
     return (
-        <div>
+        <div class="container">
             <h1>Portfolio</h1>
             <section>
                 <a href='' target="_blank">

@@ -18,6 +18,9 @@ export default function Contact() {
 
         if (inputType === 'email') {
             setEmail(inputValue);
+            if (!validateEmail(email)) {
+                document.getElementById("validEmail").setAttribute('class', 'd-block');
+            } document.getElementById("validEmail").setAttribute('class', 'd-none');
           } else if (inputType === 'name') {
             setName(inputValue);
           } else {
@@ -41,33 +44,35 @@ export default function Contact() {
     }
 
     return (
-        <div>
-            <h1>Contact</h1>
-            <form className="form" onSubmit={handleFormSubmit}>
-                <input
-                  value={name}
-                  name="name"
-                  onChange={handleInputChange}
-                  type="text"
-                  placeholder="Name"
-                />
-                <input
-                  value={email}
-                  name="email"
-                  onChange={handleInputChange}
-                  type="email"
-                  placeholder="Email"
-                />
-                  <div>Please enter a valid email!</div>
-                <textarea
-                  value={message}
-                  name="message"
-                  onChange={handleInputChange}
-                  type="text"
-                  placeholder="Message"
-                />
-                <button type="submit" id="myBtn" disabled>Submit</button>
-            </form>
+        <div class="container justify-content-center">
+            <div class="col-12 justify-content-center" style={{width: '50%'}}>
+                <h1 class="m-3">Contact</h1>
+                <form className="form-control-sm px-5" onSubmit={handleFormSubmit}>
+                    <input class="col-12"
+                    value={name}
+                    name="name"
+                    onChange={handleInputChange}
+                    type="text"
+                    placeholder="Name"
+                    />
+                    <input class="col-12 mt-2"
+                    value={email}
+                    name="email"
+                    onChange={handleInputChange}
+                    type="email"
+                    placeholder="Email"
+                    />
+                    <div id="validEmail" class="d-none">Please enter a valid email!</div>
+                    <textarea class="col-12 mt-2" style={{height: '150px'}}
+                    value={message}
+                    name="message"
+                    onChange={handleInputChange}
+                    type="text"
+                    placeholder="Message"
+                    />
+                    <button class=" mt-2" type="submit" id="myBtn" disabled>Submit</button>
+                </form>
+            </div>    
         </div>
     )
 }
