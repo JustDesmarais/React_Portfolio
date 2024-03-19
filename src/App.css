@@ -1,0 +1,37 @@
+
+
+#createLab {
+    background-image: url(./assets/images/createLab.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#monitor{
+    background-image: url(./assets/images/monitor.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#coding {
+    background-image: url(./assets/images/coding.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#techBlog {
+    background-image: url(./assets/images/techBlog.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#notes {
+    background-image: url(./assets/images/notes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#weather {
+    background-image: url(./assets/images/weather.jpg);
+    background-size: cover;
+    background-position: center;
+}

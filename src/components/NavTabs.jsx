@@ -1,44 +1,28 @@
 import { Link, useLocation } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { NavItem } from 'react-bootstrap';
 
-function Nav() {
+function Navigation() {
     const currentPage = useLocation().pathname;
   
     return (
-      <ul className="nav nav-tabs col-5 align-self-end">
-        <li className="nav-item">
-          <Link
-            to="/"
-            className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
-          >
-            About Me
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            to="/Portfolio"
-            className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
-          >
-            Portfolio
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            to="/Contact"
-            className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
-          >
-            Contact
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            to="/Resume"
-            className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
-          >
-            Resume
-          </Link>
-        </li>
-      </ul>
-    );
+      <Navbar expand="lg" className="bg-body-tertiary">
+        <Container>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="/">About</Nav.Link>
+              <Nav.Link href="/Portfolio">Portfolio</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
+              <Nav.Link href="https://drive.google.com/file/d/1oQpE4NUbp9sn4uWrQapSGOHx1tDGAjiB/view?usp=sharing" target="_blank">Resume</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    )
   }
   
-  export default Nav;
+  export default Navigation;
