@@ -15,19 +15,18 @@ export default function Portfolio () {
             </Row>
             <Row>
                 <Col>
-                  <Card className="text-white shadow-sm custom-card" style={{ position: 'relative' }} hover>
-                    <Card.Img src={Wags} alt="wags & whiskers" className="scale-up-on-hover"/>
+                  <Card className="text-white shadow-sm" style={{ position: 'relative' }} hover>
+                    <Card.Img src={Wags} alt="wags & whiskers"/>
                     <span className='git-icon'>
                         <a href='https://github.com/micahives/Wags-and-Whiskers' target="_blank">
                             <img src={whiteGitIcon} alt="GitHub Icon" style={{ width: '100%', height: '100%' }}/>
                         </a>
                     </span>
-                    <Card.ImgOverlay>
+                    <Card.ImgOverlay className='custom-card'>
                         <Card.Title>Wags and Whiskers</Card.Title>
                         <Card.Text>A wellness tracker for your pet built using React and GraphQL</Card.Text>
                         <Link to='https://wags-and-whiskers.onrender.com/' className='stretched-link' target='_blank'></Link>
                     </Card.ImgOverlay>
-                    
                   </Card>
                 </Col>
                 <Col>
